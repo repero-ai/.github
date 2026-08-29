@@ -1,0 +1,11 @@
+# Copy this file into each critical repository as .github/CODEOWNERS.
+# Replace the placeholder team with a real organization team before enabling
+# the critical ruleset.
+
+* @YOUR-ORG/maintainers
+
+# Optional narrower ownership examples:
+# /.github/          @YOUR-ORG/maintainers
+# /infra/            @YOUR-ORG/platform
+# /security/         @YOUR-ORG/security
+# /Dockerfile        @YOUR-ORG/maintainers
