@@ -1,4 +1,4 @@
-# SMNCJL Labs
+# Repero AI
 
 Open-source projects, developer tooling, infrastructure, and software experiments maintained by SMNCJL Labs.
 
