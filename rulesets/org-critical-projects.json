@@ -1,43 +1,36 @@
 {
   "name": "Organization - Critical projects",
   "target": "branch",
-  "enforcement": "disabled",
+  "enforcement": "active",
   "conditions": {
     "repository_property": {
       "include": [
         {
           "name": "security-tier",
-          "property_values": ["critical"],
+          "property_values": [
+            "critical"
+          ],
           "source": "custom"
         }
       ],
       "exclude": []
     },
     "ref_name": {
-      "include": ["~DEFAULT_BRANCH"],
+      "include": [
+        "~DEFAULT_BRANCH"
+      ],
       "exclude": []
     }
   },
   "rules": [
     {
-      "type": "pull_request",
+      "type": "required_status_checks",
       "parameters": {
-        "allowed_merge_methods": ["squash", "rebase"],
-        "dismiss_stale_reviews_on_push": true,
-        "require_code_owner_review": true,
-        "require_last_push_approval": false,
-        "required_approving_review_count": 1,
-        "required_review_thread_resolution": true
-      }
-    },
-    {
-      "type": "code_scanning",
-      "parameters": {
-        "code_scanning_tools": [
+        "do_not_enforce_on_create": true,
+        "strict_required_status_checks_policy": false,
+        "required_status_checks": [
           {
-            "tool": "CodeQL",
-            "alerts_threshold": "errors",
-            "security_alerts_threshold": "high_or_higher"
+            "context": "required-ci"
           }
         ]
       }
