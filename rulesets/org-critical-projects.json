@@ -9,8 +9,7 @@
           "name": "security-tier",
           "property_values": [
             "critical"
-          ],
-          "source": "custom"
+          ]
         }
       ],
       "exclude": []
