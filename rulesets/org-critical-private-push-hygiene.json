@@ -3,11 +3,14 @@
   "target": "push",
   "enforcement": "active",
   "conditions": {
-    "repository_name": {
+    "repository_property": {
       "include": [
-        "ai-platform",
-        "billing-core",
-        "ai-platform-ops"
+        {
+          "name": "security-tier",
+          "property_values": [
+            "Critical"
+          ]
+        }
       ],
       "exclude": []
     }
