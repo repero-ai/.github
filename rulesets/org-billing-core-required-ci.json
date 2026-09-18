@@ -25,10 +25,7 @@
         "strict_required_status_checks_policy": false,
         "required_status_checks": [
           {
-            "context": "check"
-          },
-          {
-            "context": "postgres"
+            "context": "required-ci"
           }
         ]
       }
