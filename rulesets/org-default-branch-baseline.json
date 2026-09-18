@@ -4,12 +4,7 @@
   "enforcement": "active",
   "conditions": {
     "repository_name": {
-      "include": [
-        "ai-platform",
-        "billing-core",
-        "ai-platform-ops",
-        "repero-landing"
-      ],
+      "include": ["~ALL"],
       "exclude": [],
       "protected": true
     },
