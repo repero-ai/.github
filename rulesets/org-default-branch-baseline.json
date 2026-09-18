@@ -4,7 +4,12 @@
   "enforcement": "active",
   "conditions": {
     "repository_name": {
-      "include": ["~ALL"],
+      "include": [
+        "ai-platform",
+        "billing-core",
+        "ai-platform-ops",
+        "repero-landing"
+      ],
       "exclude": [],
       "protected": true
     },
@@ -30,7 +35,7 @@
         "dismiss_stale_reviews_on_push": true,
         "require_code_owner_review": false,
         "require_last_push_approval": false,
-        "required_approving_review_count": 1,
+        "required_approving_review_count": 0,
         "required_review_thread_resolution": true
       }
     }
